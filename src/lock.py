@@ -30,7 +30,6 @@ class Lock():
             if(self.challenge(keycard)):
                 count+=1
         fraction=count/self.numChallenges
-        print(fraction)
         if(math.fabs(1-fraction-self.p)<=0.01):
             return True
         else:
